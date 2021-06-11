@@ -6,9 +6,7 @@ const initState = {
     loading: false
 }
 
-// eslint-disable-next-line import/no-anonymous-default-export
 export default (state = initState, action) => {
-    // eslint-disable-next-line default-case
     switch(action.type){
         case userContants.USER_REGISTER_REQUEST:
             state = {
