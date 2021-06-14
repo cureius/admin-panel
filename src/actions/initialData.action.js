@@ -8,7 +8,7 @@ import axios from "../helpers/axios";
 
 export const getInitialData = () => {
   return async (dispatch) => {
-    const res = await axios.post(`/initialData`);
+    const res = await axios.get(`/initialdata`);
     if (res.status === 200) {
       const { categories, products, orders } = res.data;
       dispatch({
